@@ -3,10 +3,10 @@ frontend:
   phases:
     preBuild:
       commands:
-        - npm ci
+        - npm ci --legacy-peer-deps=true
     build:
       commands:
-        - npm run build
+        - npm run build  --legacy-peer-deps=true
   artifacts:
     baseDirectory: .next
     files:

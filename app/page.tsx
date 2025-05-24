@@ -1,13 +1,12 @@
 "use client";
 
 import {useEffect, useState} from "react";
-import type {Schema} from "@/amplify/data/resource";
 import "./../app/app.css";
 import "@aws-amplify/ui-react/styles.css";
 
 
 export default function App() {
-    const [todos, setTodos] = useState<Array<Schema["Todo"]["type"]>>([]);
+    const [todos, setTodos] = useState([]);
 
     function listTodos() {
 
@@ -27,7 +26,7 @@ export default function App() {
             <button onClick={createTodo}>+ new</button>
             <ul>
                 {todos.map((todo) => (
-                    <li key={todo.id}>{todo.content}</li>
+                    <li key={3}>{""}</li>
                 ))}
             </ul>
             <div>
